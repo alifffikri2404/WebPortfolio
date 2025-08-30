@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Aliff Fikri: Portfolio Home</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicons -->
+    <link href="assets/port-img/boby-logo.png" rel="icon" />
+    <link href="assets/port-img/boby-logo.png" rel="apple-touch-icon" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+
+    <!-- =======================================================
+  * Template Name: EasyFolio
+  * Template URL: https://bootstrapmade.com/easyfolio-bootstrap-portfolio-template/
+  * Updated: Feb 21 2025 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  </head>
+
+  <style>
+    :root {
+      --database-color: #e91e63;
+      --web-dev-color: #009688;
+      --server-infra-color: #4a6cf7;
+      --soft-skill-color: #2a9d8f;
+      --language-color: #2a6fc9;
+    }
+
+    .btn-linkside {
+      background-color: var(--accent-color);
+      border-color: var(--accent-color);
+      color: var(--contrast-color);
+      padding: 0.8rem 2rem;
+      font-size: 1rem;
+      font-weight: 500;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+    }
+
+    .skill-blocks h2 {
+      font-weight: 700;
+    }
+
+    .tech-badge {
+      display: inline-flex;
+      align-items: center;
+      background: #f8f9fa;
+      border: 1px solid #ddd;
+      border-radius: 40px;
+      padding: 6px 10px;
+      margin-bottom: 7px;
+      font-size: 14px;
+    }
+
+    .tech-badge img {
+      height: 20px;
+      margin-right: 8px;
+    }
+
+    .portfolio .portfolio-card .portfolio-content h3 {
+      margin: 10px 0 15px;
+    }
+
+    .testimonials .testimonial-item p {
+      text-align: justify;
+      margin-right: 30px;
+    }
+
+    .stat-item img {
+      height: 100px;
+    }
+
+    @media (max-width: 768px) {
+      .header {
+        padding: 20px;
+      }
+
+      .skills-container {
+        padding: 20px;
+      }
+
+      .skill-box {
+        padding: 15px 20px;
+      }
+
+      .skill-name {
+        font-size: 16px;
+      }
+
+      .skill-logo {
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+      }
+
+      .languages {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      }
+
+      .language-box {
+        padding: 15px 25px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .skill-box {
+        flex-direction: row;
+        text-align: center;
+        gap: 10px;
+      }
+
+      .skill-logo {
+        margin-top: 5px;
+      }
+    }
+  </style>
+
+  <body class="starter-page-page">
+    <header id="header" class="header d-flex align-items-center sticky-top">
+      <div
+        class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
+      >
+        <a
+          href="index.html"
+          class="logo d-flex align-items-center me-auto me-xl-0"
+        >
+          <img src="assets/port-img/boby-logo.png" alt="Logo" />
+          <h1 class="sitename" style="font-weight: 700">Aliff Fikri</h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="/index.html" class="active">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li class="dropdown">
+              <a href="#"
+                ><span>Project</span>
+                <i class="bi bi-chevron-down toggle-dropdown"></i
+              ></a>
+              <ul>
+                <li><a href="/projects.html">All Projects</a></li>
+                <li class="dropdown">
+                  <a href="#"
+                    ><span>Specific Projects</span>
+                    <i class="bi bi-chevron-down toggle-dropdown"></i
+                  ></a>
+                  <ul>
+                    <li>
+                      <a href="/project/pawsandprefs.html"
+                        >Paws & Preferences</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/project/internalsys.html"
+                        >MICTH Internal System</a
+                      >
+                    </li>
+                    <li><a href="/project/networked.html">NetWorked!</a></li>
+                    <li>
+                      <a href="/project/mpasandbloom.html">MPAS & BLOOM AI</a>
+                    </li>
+                    <li>
+                      <a href="/project/electricitycalc.html"
+                        >Electricity Rate Calculator</a
+                      >
+                    </li>
+                    <li><a href="/project/doclean.html">DoClean!</a></li>
+                    <li>
+                      <a href="/project/healthysnake.html"
+                        >Healthy Snake Game</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/project/ransomwhere.html">RansomWhere?</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="/experience.html">Experience</a></li>
+            <li><a href="/certificate.html">Achievement</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+        <div class="header-social-links">
+          <a href="https://github.com/alifffikri2404" class="github"
+            ><i class="bi bi-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/aliff-fikri-50a217232/"
+            class="linkedin"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- Hero Section / Section 1 -->
+      <section id="hero" class="hero section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row align-items-center content">
+            <div class="col-lg-6">
+              <div class="hero-image">
+                <img
+                  src="assets/port-img/boby.png"
+                  alt="Aliff Fikri Hero Image"
+                  class="img-fluid"
+                  data-aos="zoom-out"
+                  data-aos-delay="300"
+                />
+                <div class="shape-1"></div>
+                <div class="shape-2"></div>
+              </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <h2>Aliff Fikri</h2>
+              <p class="lead">
+                Versatile and detail-oriented IT professional with hands-on
+                experience in web development, server management and network
+                administration
+              </p>
+              <div class="cta-buttons" data-aos="fade-up" data-aos-delay="300">
+                <a href="assets/Aliff-Fikri-CV.pdf" class="btn btn-primary"
+                  >Download CV</a
+                >
+                <a href="contact.html" class="btn btn-outline">Let's Connect</a>
+              </div>
+              <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+                <div class="stat-item">
+                  <span class="stat-number">1+</span>
+                  <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">10+</span>
+                  <span class="stat-label">Tech Projects Delivered</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">10+</span>
+                  <span class="stat-label">Awards & Competitions</span>
+                </div>
+              </div>
+              <div
+                class="hero-stats"
+                data-aos="fade-up"
+                data-aos-delay="400"
+                style="gap: 1.5rem; margin-top: 1.2rem"
+              >
+                <div class="stat-item">
+                  <a
+                    href="https://www.credly.com/badges/e730e4bf-6aac-42e5-9394-b39087ca84a0/public_url"
+                    target="_blank"
+                  >
+                    <img
+                      src="assets/port-cert/aws-compute-hero.png"
+                      alt="AWS Cert 1"
+                  /></a>
+                </div>
+                <div class="stat-item">
+                  <a
+                    href="https://www.credly.com/badges/7266e965-cc1b-4813-84eb-3e1408835fa9/public_url"
+                    target="_blank"
+                  >
+                    <img
+                      src="assets/port-cert/aws-storage-hero.png"
+                      alt="AWS Cert 2"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of Section 1 -->
+
+      <!-- About Section / Section 2 -->
+      <section
+        id="about"
+        class="testimonials section light-background"
+        style="padding: 40px 0px"
+      >
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <br />
+          <h2>About Me</h2>
+          <div class="title-shape">
+            <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <!-- End Section Title -->
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="testimonials-slider swiper init-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="row">
+                    <div class="col-lg-8">
+                      <h2>Full-Stack Problem Solver</h2>
+                      <p>
+                        I approach IT as a problem-solver, not just a specialist
+                        confined to one area. I believe the best solutions are
+                        the one that comes from understanding the full
+                        technology stack, which is why I’ve gained numerous
+                        hands-on experience in software development, network
+                        engineering and project support.
+                      </p>
+                      <p>
+                        This broad foundation allows me to effectively bridge
+                        gaps between my teams and contribute to every stage of a
+                        project, from initial concept to the final and stable
+                        deployment.
+                      </p>
+                      <br /><br />
+                      <div
+                        class="container"
+                        style="text-align: center"
+                        data-aos="fade-up"
+                        data-aos-delay="200"
+                      >
+                        <div
+                          class="cta-buttons"
+                          data-aos="fade-up"
+                          data-aos-delay="300"
+                        >
+                          <a href="/about.html" class="btn-linkside">
+                            Discover My Journey
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 d-none d-lg-block">
+                      <div class="featured-img-wrapper">
+                        <img
+                          src="assets/port-img/boby-6-2.jpg"
+                          class="featured-img"
+                          alt="Aliff Fikri Testimonial"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Testimonial Item -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- kena fikirkan nak letak apa dekat sini -->
+      <!-- End of Section 2 -->
+
+      <!-- Experience Section / Section 3 -->
+      <section id="experience" class="portfolio section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>My Experience</h2>
+          <div class="title-shape">
+            <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              ></path>
+            </svg>
+          </div>
+          <p>
+            Practical exposure in software development, network engineering and
+            event management, which developing a well-rounded IT foundation
+          </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div
+            class="isotope-layout"
+            data-default-filter="*"
+            data-layout="masonry"
+            data-sort="original-order"
+          >
+            <div
+              class="row g-4 isotope-container"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div
+                class="col-lg-4 col-md-4 portfolio-item isotope-item filter-web"
+              >
+                <div class="portfolio-card">
+                  <div class="portfolio-image">
+                    <img
+                      src="assets/port-img/networked-present-3.jpg"
+                      class="img-fluid"
+                      alt="Software Development Portfolio"
+                      loading="lazy"
+                    />
+                    <div class="portfolio-overlay">
+                      <div class="portfolio-actions">
+                        <a
+                          href="assets/port-img/networked-present-3.jpg"
+                          class="glightbox preview-link"
+                          data-gallery="portfolio-gallery-portex1"
+                          ><i class="bi bi-eye"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="portfolio-content">
+                    <div class="tech-badge">
+                      <img src="assets/port-img/logo-php.png" alt="PHP logo" />
+                      <span>PHP</span>
+                    </div>
+                    <div class="tech-badge">
+                      <img
+                        src="assets/port-img/logo-wordpress.png"
+                        alt="WordPress logo"
+                      />
+                      <span>WordPress</span>
+                    </div>
+                    <div class="tech-badge">
+                      <img
+                        src="assets/port-img/logo-figma.svg"
+                        alt="Figma logo"
+                      />
+                      <span>Figma</span>
+                    </div>
+                    <h3>Software Development</h3>
+                    <p>
+                      Experience in developing web apps, internal systems and
+                      mobile applications, with additional expertise in
+                      wireframing and mockup design for WordPress and client
+                      solutions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio 1 Item -->
+
+              <div
+                class="col-lg-4 col-md-4 portfolio-item isotope-item filter-graphics"
+              >
+                <div class="portfolio-card">
+                  <div class="portfolio-image">
+                    <img
+                      src="assets/port-img/intern-1.jpg"
+                      class="img-fluid"
+                      alt="Network Engineer Portfolio"
+                      loading="lazy"
+                    />
+                    <div class="portfolio-overlay">
+                      <div class="portfolio-actions">
+                        <a
+                          href="assets/port-img/intern-1.jpg"
+                          class="glightbox preview-link"
+                          data-gallery="portfolio-gallery-portex2"
+                          ><i class="bi bi-eye"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="portfolio-content">
+                    <div class="tech-badge">
+                      <img
+                        src="assets/port-img/logo-debian.png"
+                        alt="Debian logo"
+                      />
+                      <span>Debian</span>
+                    </div>
+                    <div class="tech-badge">
+                      <img
+                        src="assets/port-img/logo-windows.png"
+                        alt="Windows logo"
+                      />
+                      <span>Windows</span>
+                    </div>
+                    <div class="tech-badge">
+                      <img
+                        src="assets/port-img/logo-mikrotik.svg"
+                        alt="MikroTik logo"
+                      />
+                      <span>MikroTik</span>
+                    </div>
+                    <h3>Network Engineering</h3>
+                    <p>
+                      Hands-on in server and network administration including
+                      Debian-based virtual servers, Mikrotik configuration, and
+                      IT support for both PCs and PABX system.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio 2 Item -->
+
+              <div
+                class="col-lg-4 col-md-4 portfolio-item isotope-item filter-motion"
+              >
+                <div class="portfolio-card">
+                  <div class="portfolio-image">
+                    <img
+                      src="assets/port-img/smix-7.jpg"
+                      class="img-fluid"
+                      alt="Event Management Portfolio"
+                      loading="lazy"
+                    />
+                    <div class="portfolio-overlay">
+                      <div class="portfolio-actions">
+                        <a
+                          href="assets/port-img/smix-7.jpg"
+                          class="glightbox preview-link"
+                          data-gallery="portfolio-gallery-portex3"
+                          ><i class="bi bi-eye"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="portfolio-content">
+                    <div class="tech-badge">
+                      <img
+                        src="assets/port-img/people-fill.svg"
+                        alt="Teamwork bi icon"
+                      />
+                      <span>Teamwork</span>
+                    </div>
+                    <div class="tech-badge">
+                      <img
+                        src="assets/port-img/chat-dots-fill.svg"
+                        alt="Communication icon"
+                      />
+                      <span>Communication</span>
+                    </div>
+                    <h3>Project & Event Support</h3>
+                    <p>
+                      Contributed to the planning, organization and support of
+                      ICT-related events and projects, which strengthening
+                      leadership, teamwork and cross-functional collaboration.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio 3 Item -->
+            </div>
+            <br /><br />
+            <div
+              class="container"
+              style="text-align: center"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="cta-buttons" data-aos="fade-up" data-aos-delay="300">
+                <a href="/experience.html" class="btn-linkside">
+                  Explore My Experience
+                </a>
+              </div>
+            </div>
+            <!-- End Portfolio Container -->
+          </div>
+        </div>
+      </section>
+      <!-- End of Section 3 -->
+
+      <!-- Project Section / Section 4 -->
+      <section id="project" class="portfolio section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>My Projects</h2>
+          <div class="title-shape">
+            <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              ></path>
+            </svg>
+          </div>
+          <p>
+            A showcase of project ideas turned into applications, from gamified
+            learning and mobile apps to HPC research and AI computation
+          </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div
+            class="isotope-layout"
+            data-default-filter="*"
+            data-layout="masonry"
+            data-sort="original-order"
+          >
+            <div
+              class="row g-4 isotope-container"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div
+                class="col-lg-4 col-md-4 portfolio-item isotope-item filter-web"
+              >
+                <div class="portfolio-card">
+                  <div class="portfolio-image">
+                    <img
+                      src="assets/port-img/paws-1.png"
+                      class="img-fluid"
+                      alt="Paws & Preferences Portfolio"
+                      loading="lazy"
+                    />
+                    <div class="portfolio-overlay">
+                      <div class="portfolio-actions">
+                        <a
+                          href="assets/port-img/paws-1.png"
+                          class="glightbox preview-link"
+                          data-gallery="portfolio-gallery-portpr1"
+                          ><i class="bi bi-eye"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="portfolio-content">
+                    <div class="tech-badge">
+                      <img
+                        src="assets/port-img/logo-javascript.png"
+                        alt="JavaScript logo"
+                      />
+                      <span>JavaScript</span>
+                    </div>
+                    <div class="tech-badge">
+                      <img
+                        src="assets/port-img/logo-css3.png"
+                        alt="CSS3 logo"
+                      />
+                      <span>CSS</span>
+                    </div>
+                    <div class="tech-badge">
+                      <img
+                        src="assets/port-img/logo-html5.png"
+                        alt="HTML5 logo"
+                      />
+                      <span>HTML</span>
+                    </div>
+                    <h3>Paws & Preference: Find Your Favourite Kitty</h3>
+                    <p>
+                      Swipe-based JavaScript web app inspired by dating apps
+                      where users can like and dislike random cat images.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio 1 Item -->
+
+              <div
+                class="col-lg-4 col-md-4 portfolio-item isotope-item filter-graphics"
+              >
+                <div class="portfolio-card">
+                  <div class="portfolio-image">
+                    <img
+                      src="assets/port-img/networked-game2.png"
+                      class="img-fluid"
+                      alt="NetWorked! Portfolio"
+                      loading="lazy"
+                    />
+                    <div class="portfolio-overlay">
+                      <div class="portfolio-actions">
+                        <a
+                          href="assets/port-img/networked-game2.png"
+                          class="glightbox preview-link"
+                          data-gallery="portfolio-gallery-portpr2"
+                          ><i class="bi bi-eye"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="portfolio-content">
+                    <div class="tech-badge">
+                      <img
+                        src="assets/port-img/logo-unity.png"
+                        alt="Unity Engine logo"
+                      />
+                      <span>Unity Engine</span>
+                    </div>
+                    <div class="tech-badge">
+                      <img
+                        src="assets/port-img/logo-csharp.png"
+                        alt="C# logo"
+                      />
+                      <span>C#</span>
+                    </div>
+                    <div class="tech-badge">
+                      <img
+                        src="assets/port-img/logo-android.png"
+                        alt="Android logo"
+                      />
+                      <span>Android</span>
+                    </div>
+                    <h3>
+                      NetWorked!: A Gamified E-Learning Mobile Application
+                    </h3>
+                    <p>
+                      E-learning Android mobile game application to educate
+                      computer science students about internetworking
+                      fundamental.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio 2 Item -->
+
+              <div
+                class="col-lg-4 col-md-4 portfolio-item isotope-item filter-motion"
+              >
+                <div class="portfolio-card">
+                  <div class="portfolio-image">
+                    <img
+                      src="assets/port-img/hpcai-9.png"
+                      class="img-fluid"
+                      alt="MPAS & BLOOM Portfolio"
+                      loading="lazy"
+                    />
+                    <div class="portfolio-overlay">
+                      <div class="portfolio-actions">
+                        <a
+                          href="assets/port-img/hpcai-9.png"
+                          class="glightbox preview-link"
+                          data-gallery="portfolio-gallery-portpr3"
+                          ><i class="bi bi-eye"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="portfolio-content">
+                    <div class="tech-badge">
+                      <img
+                        src="assets/port-img/logo-mpas.png"
+                        alt="MPAS logo"
+                      />
+                      <span>MPAS-A</span>
+                    </div>
+                    <div class="tech-badge">
+                      <img
+                        src="assets/port-img/logo-bloom.png"
+                        alt="BLOOM AI logo"
+                      />
+                      <span>BLOOM 176B</span>
+                    </div>
+                    <div class="tech-badge">
+                      <img
+                        src="assets/port-img/logo-ncigadi.png"
+                        alt="NCI logo"
+                      />
+                      <span>Gadi Supercomputer</span>
+                    </div>
+                    <h3>
+                      6th APAC HPC-AI Competition: MPAS Atmosphere & BLOOM AI
+                    </h3>
+                    <p>
+                      Research on benchmarking CPU and GPU performance for both
+                      High Performance Computing (HPC) and Artifical
+                      Intelligence (AI).
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio 3 Item -->
+            </div>
+            <br /><br />
+            <div
+              class="container"
+              style="text-align: center"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="cta-buttons" data-aos="fade-up" data-aos-delay="300">
+                <a href="/projects.html" class="btn-linkside">
+                  View All Projects
+                </a>
+              </div>
+            </div>
+            <!-- End Portfolio Container -->
+          </div>
+        </div>
+      </section>
+      <!-- End of Section 4 -->
+
+      <!-- Let's Connect Section / Section 5 -->
+      <section id="connectme" class="portfolio section light-background">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Let's Connect</h2>
+          <p>
+            I'm always open to discussing new projects, creative ideas or
+            opportunities to be part of an amazing team. Feel free to reach me
+            out. <br /><br />Let’s build something meaningful together!
+          </p>
+          <div
+            class="container"
+            style="margin-top: 50px; text-align: center"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="cta-buttons" data-aos="fade-up" data-aos-delay="300">
+              <a href="/contact.html" class="btn-linkside"> Get In Touch </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of Section 5 -->
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="credits">
+          Developed by
+          <a href="https://www.linkedin.com/in/aliff-fikri-50a217232/"
+            >Aliff Fikri</a
+          ><br />
+          Designed by
+          <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+        <div class="social-links d-flex justify-content-center">
+          <a href="https://github.com/alifffikri2404"
+            ><i class="bi bi-github"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/aliff-fikri-50a217232/"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+        </div>
+
+        <div class="copyright text-center">
+          <p>
+            <br />
+            © <span>Copyright</span>
+            <strong class="px-1 sitename">EasyFolio</strong>
+            <span>All Rights Reserved</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

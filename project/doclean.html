@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Aliff Fikri: DoClean!</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicons -->
+    <link href="../assets/port-img/boby-logo.png" rel="icon" />
+    <link href="../assets/port-img/boby-logo.png" rel="apple-touch-icon" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="../assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="../assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="../assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/swiper/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+
+    <!-- Main CSS File -->
+    <link href="../assets/css/main.css" rel="stylesheet" />
+
+    <!-- =======================================================
+  * Template Name: EasyFolio
+  * Template URL: https://bootstrapmade.com/easyfolio-bootstrap-portfolio-template/
+  * Updated: Feb 21 2025 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  </head>
+
+  <style>
+    .btn-linkside {
+      background-color: var(--accent-color);
+      border-color: var(--accent-color);
+      color: var(--contrast-color);
+      padding: 0.8rem 2rem;
+      font-size: 1rem;
+      font-weight: 500;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+    }
+
+    .portfolio-details .portfolio-description p {
+      text-align: justify;
+    }
+
+    .tech-badge {
+      display: inline-flex;
+      align-items: center;
+      background: #f8f9fa;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 6px 10px;
+      margin: 5px;
+      font-size: 14px;
+    }
+
+    .tech-badge img {
+      height: 30px;
+      margin-right: 8px;
+    }
+
+    .project-details {
+      margin: 25px 0px 25px 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px; /* spacing between rows */
+      /* margin-left: 15px; */
+    }
+
+    .project-details .detail-row {
+      display: flex;
+      align-items: center;
+    }
+
+    .project-details i {
+      font-size: 1.5rem;
+      color: var(--accent-color);
+      margin-right: 8px;
+      flex-shrink: 0;
+      width: 30px;
+    }
+
+    .project-details h5 {
+      margin: 0;
+      font-size: 1rem;
+      font-weight: 600;
+      width: 130px; /* fixed width for labels */
+      flex-shrink: 0;
+    }
+
+    .project-details .detail-value {
+      flex: 1;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .project-details .detail-value a {
+      text-decoration: none;
+    }
+
+    .project-details .detail-value a:hover {
+      text-decoration: underline;
+    }
+
+    .project-details .btn {
+      font-size: 0.9rem;
+      padding: 4px 20px;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+    }
+
+    .project-details .btn.btn-primary {
+      background-color: var(--accent-color);
+      border-color: var(--accent-color);
+      color: var(--contrast-color);
+    }
+
+    .project-details .btn.btn-outline {
+      border: 2px solid color-mix(in srgb, var(--accent-color), transparent 70%);
+      color: var(--accent-color);
+      background: transparent;
+    }
+
+    .related-services {
+      background: var(--surface-color);
+      padding: 15px;
+      /* border-radius: 10px; */
+      /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.05); */
+    }
+    .related-services h4 {
+      font-weight: 600;
+    }
+
+    .job-scope-item {
+      background-color: var(--surface-color);
+      /* margin-bottom: 18x; */
+      padding-bottom: 18px;
+      transition: transform 0.3s ease;
+      /* border-bottom: 1px solid
+        color-mix(in srgb, var(--default-color), transparent 90%); */
+    }
+
+    .service-details .related-services .job-scope-item:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+    .job-scope-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .job-scope-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+
+    .job-scope-header i {
+      font-size: 1.6rem;
+      color: var(--accent-color);
+    }
+
+    .job-scope-header h5 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 0;
+      margin-left: 5px;
+      color: var(--heading-color);
+    }
+
+    .job-scope-item p {
+      margin: 0;
+      font-size: 14px;
+      color: color-mix(in srgb, var(--default-color), transparent 20%);
+      padding-left: 0px; /* indent explanation under title */
+      text-align: justify;
+    }
+
+    .job-scope-header s {
+      font-size: 14px;
+      color: var(--default-color);
+    }
+
+    section,
+    .section {
+      padding: 10px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      padding-bottom: 30px;
+      position: relative;
+    }
+  </style>
+
+  <body class="starter-page-page">
+    <header id="header" class="header d-flex align-items-center sticky-top">
+      <div
+        class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
+      >
+        <a
+          href="../index.html"
+          class="logo d-flex align-items-center me-auto me-xl-0"
+        >
+          <img src="../assets/port-img/boby-logo.png" alt="Logo" />
+          <h1 class="sitename" style="font-weight: 700">Aliff Fikri</h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li class="dropdown">
+              <a href="#" class="active"
+                ><span>Project</span>
+                <i class="bi bi-chevron-down toggle-dropdown"></i
+              ></a>
+              <ul>
+                <li>
+                  <a href="../projects.html">All Projects</a>
+                </li>
+                <li class="dropdown">
+                  <a href="#"
+                    ><span>Specific Projects</span>
+                    <i class="bi bi-chevron-down toggle-dropdown"></i
+                  ></a>
+                  <ul>
+                    <li>
+                      <a href="../project/pawsandprefs.html"
+                        >Paws & Preferences</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../project/internalsys.html"
+                        >MICTH Internal System</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../project/networked.html">NetWorked!</a>
+                    </li>
+                    <li>
+                      <a href="../project/mpasandbloom.html">MPAS & BLOOM AI</a>
+                    </li>
+                    <li>
+                      <a href="../project/electricitycalc.html"
+                        >Electricity Rate Calculator</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../project/doclean.html" class="active"
+                        >DoClean!</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../project/healthysnake.html"
+                        >Healthy Snake Game</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../project/ransomwhere.html">RansomWhere?</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="../experience.html">Experience</a></li>
+            <li><a href="../certificate.html">Achievement</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+        <div class="header-social-links">
+          <a href="https://github.com/alifffikri2404" class="github"
+            ><i class="bi bi-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/aliff-fikri-50a217232/"
+            class="linkedin"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- Project Details Section -->
+      <section
+        id="portfolio-details"
+        class="portfolio-details section"
+        style="padding: 40px 0px"
+      >
+        <div class="container section-title" data-aos="fade-up">
+          <br />
+          <h2>DoClean!: Clean Your<br />Worries Away</h2>
+          <div class="title-shape">
+            <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <div class="container" data-aos="fade-up">
+          <div class="row gy-4 g-lg-5">
+            <!-- Photo and Video -->
+            <div class="col-lg-6">
+              <img
+                src="../assets/port-img/doclean-logo.png"
+                class="img-fluid mb-4"
+                alt="DoClean! Logo"
+              />
+              <img
+                src="../assets/port-img/doclean-1.png"
+                class="img-fluid mb-4"
+                alt="DoClean! Ads Design 1"
+              />
+              <img
+                src="../assets/port-img/doclean-2.png"
+                class="img-fluid mb-4"
+                alt="DoClean! Ads Design 2"
+              />
+              <img
+                src="../assets/port-img/doclean-5.png"
+                class="img-fluid mb-4"
+                alt="DoClean! Mobile Apps UI"
+              />
+              <img
+                src="../assets/port-img/doclean-7.jpg"
+                class="img-fluid mb-4"
+                alt="DoClean! Team Members"
+              />
+            </div>
+
+            <!-- Project Overview -->
+            <div class="col-lg-6">
+              <div class="position-sticky" style="top: 40px">
+                <div class="portfolio-description">
+                  <h2>Project Overview</h2>
+                  <p>
+                    DoClean! is a full-stack Flutter mobile application designed
+                    to bridge the gap between customers and housekeeping service
+                    providers. The app offers an intuitive platform for users to
+                    book personalized cleaning services effortlessly, while
+                    providing cleaning companies a channel to promote their
+                    services as well as reach a broader audience. This mobile
+                    app development implemented the Flutter framework and
+                    integrated Firebase to securely manage user data, booking
+                    orders and authentication processes, which then delivering a
+                    seamless and reliable user experience.
+                  </p>
+                  <p>
+                    The mobile app was built on a viable business model by
+                    targeting working families, corporations and newly married
+                    couples. Its value proposition are to offer customers
+                    convenience and discounts while providing cleaning companies
+                    with increased visibility and customer acquisition. Thus, it
+                    will create a sustainable ecosystem facilitated by the app.
+                  </p>
+                </div>
+                <div class="tech-badge">
+                  <img
+                    src="../assets/port-img/logo-flutter.png"
+                    alt="Flutter logo"
+                  />
+                  <span>Flutter</span>
+                </div>
+                <div class="tech-badge">
+                  <img src="../assets/port-img/logo-dart.png" alt="Dart logo" />
+                  <span>Dart</span>
+                </div>
+                <div class="tech-badge">
+                  <img
+                    src="../assets/port-img/logo-firebase-new2.png"
+                    alt="Firebase logo"
+                  />
+                  <span>Firebase</span>
+                </div>
+                <div class="tech-badge">
+                  <img
+                    src="../assets/port-img/logo-android.png"
+                    alt="Android logo"
+                  />
+                  <span>Android</span>
+                </div>
+                <div class="portfolio-info mt-4">
+                  <div class="project-details">
+                    <!-- Category -->
+                    <div class="detail-row">
+                      <i class="bi bi-file-code"></i>
+                      <h5>Category</h5>
+                      <div class="detail-value">Mobile & Game Applications</div>
+                    </div>
+                    <!-- Date -->
+                    <div class="detail-row">
+                      <i class="bi bi-clock"></i>
+                      <h5>Duration</h5>
+                      <div class="detail-value">
+                        December 2022 - January 2023
+                      </div>
+                    </div>
+                    <!-- Contributors -->
+                    <div class="detail-row">
+                      <i class="bi bi-people"></i>
+                      <h5>Contributors</h5>
+                      <div class="detail-value">
+                        <a
+                          href="https://www.linkedin.com/in/muhammad-azman-a5a123237/"
+                          target="_blank"
+                          >Muhammad Azman Habeeb Mohammed</a
+                        ><br /><a
+                          href="https://www.linkedin.com/in/nurul-nadhirah-5a2417327/"
+                          target="_blank"
+                          >Nurul Nadhirah Ismail</a
+                        ><br /><a
+                          href="https://www.linkedin.com/in/nurfarizah/"
+                          target="_blank"
+                          >Nurfarizah Sa'at</a
+                        >
+                      </div>
+                    </div>
+                    <!-- GitHub -->
+                    <div class="detail-row">
+                      <i class="bi bi-github"></i>
+                      <h5>GitHub</h5>
+                      <div class="detail-value">
+                        <a
+                          href="https://github.com/alifffikri2404/DoCleanApps-FlutterFirebase.git"
+                          target="_blank"
+                          class="btn btn-outline btn-sm"
+                        >
+                          View Repo
+                        </a>
+                      </div>
+                    </div>
+                    <!-- Live Demo (if applicable) -->
+                    <!-- <div class="detail-row">
+                      <i class="bi bi-record-circle"></i>
+                      <h5>Live Demo</h5>
+                      <div class="detail-value">
+                        <a
+                          href="https://your-live-demo.com"
+                          target="_blank"
+                          class="btn btn-primary btn-sm"
+                        >
+                          Visit Site
+                        </a>
+                      </div>
+                    </div> -->
+                    <!-- Download APK (if applicable) -->
+                    <div class="detail-row">
+                      <i class="bi bi-android"></i>
+                      <h5>APK File</h5>
+                      <div class="detail-value">
+                        <a
+                          href="https://drive.google.com/uc?export=download&id=1BApA2ywMPD3jzdNdumukHy6m7NE8bkFi"
+                          target="_blank"
+                          class="btn btn-primary btn-sm"
+                        >
+                          Download APK
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Key Features -->
+                  <div class="related-services">
+                    <h4>Key Features</h4>
+                    <div class="job-scope-item">
+                      <div class="job-scope-header">
+                        <i class="bi bi-lightning-fill"></i>
+                        <h5>One-Tap Booking System</h5>
+                      </div>
+                      <p>
+                        Implemented an effortless booking interface, which
+                        allowing users to schedule personalized cleaning
+                        services with minimal steps.
+                      </p>
+                    </div>
+                    <div class="job-scope-item">
+                      <div class="job-scope-header">
+                        <i class="bi bi-database"></i>
+                        <h5>Firebase-Backed Data Management</h5>
+                      </div>
+                      <p>
+                        Securely stored and managed all customer personal
+                        details and booking orders in real-time using Firebase,
+                        to ensure data reliability and seamless synchronization.
+                      </p>
+                    </div>
+                    <div class="job-scope-item">
+                      <div class="job-scope-header">
+                        <i class="bi bi-arrow-left-right"></i>
+                        <h5>Dual-Sided Marketplace Platform</h5>
+                      </div>
+                      <p>
+                        Created a value proposition for both end-users such as
+                        discount vouchers and convenience, as well as service
+                        providers by increasing customer reach and promotional
+                        channels, as outlined in the Business Model Canvas.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Challenges & Solutions -->
+                  <div class="related-services">
+                    <h4>Challenges & Solutions</h4>
+                    <div class="job-scope-item">
+                      <div class="job-scope-header">
+                        <i class="bi bi-exclamation-triangle"></i>
+                        <h5>Identified Challenges</h5>
+                      </div>
+                      <div class="job-scope-header">
+                        <s class="bi bi-caret-right-fill"></s>
+                        <p>
+                          Complex Android deployment process due to
+                          machine-specific Gradle and dependency conflicts,
+                          which often caused build failures across different
+                          development environments.
+                        </p>
+                      </div>
+                      <div class="job-scope-header">
+                        <s class="bi bi-caret-right-fill"></s>
+                        <p>
+                          Designing a flexible data schema in Firebase to
+                          efficiently handle the relationship between users,
+                          bookings and service providers.
+                        </p>
+                      </div>
+                      <div class="job-scope-header">
+                        <s class="bi bi-caret-right-fill"></s>
+                        <p>
+                          Translating the theoretical Business Model Canvas
+                          (BMC) into an actual solution app features that
+                          delivered value for both customer segments.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="job-scope-item">
+                      <div class="job-scope-header">
+                        <i class="bi bi-lightbulb"></i>
+                        <h5>Solutions & Action Plan</h5>
+                      </div>
+                      <div class="job-scope-header">
+                        <s class="bi bi-caret-right-fill"></s>
+                        <p>
+                          Standardized the development environment using
+                          version-controlled Android Gradle configuration and
+                          clearly documented the setup process to ensure
+                          consistent and successful builds across all team
+                          members' machines.
+                        </p>
+                      </div>
+                      <div class="job-scope-header">
+                        <s class="bi bi-caret-right-fill"></s>
+                        <p>
+                          Modeled Firestore collections to separate user data,
+                          booking orders and company profiles, which allowing
+                          scalable queries and secure access rules for different
+                          user types.
+                        </p>
+                      </div>
+                      <div class="job-scope-header">
+                        <s class="bi bi-caret-right-fill"></s>
+                        <p>
+                          Mapped BMC components directly to app functionality
+                          such as implementing a voucher system for better value
+                          proposition.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /End Project Details Section -->
+
+      <!-- Achievement Section - if applicable -->
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="credits">
+          Developed by
+          <a href="https://www.linkedin.com/in/aliff-fikri-50a217232/"
+            >Aliff Fikri</a
+          ><br />
+          Designed by
+          <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+        <div class="social-links d-flex justify-content-center">
+          <a href="https://github.com/alifffikri2404"
+            ><i class="bi bi-github"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/aliff-fikri-50a217232/"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+        </div>
+
+        <div class="copyright text-center">
+          <p>
+            <br />
+            © <span>Copyright</span>
+            <strong class="px-1 sitename">EasyFolio</strong>
+            <span>All Rights Reserved</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/php-email-form/validate.js"></script>
+    <script src="../assets/vendor/aos/aos.js"></script>
+    <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

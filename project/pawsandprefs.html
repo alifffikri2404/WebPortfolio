@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Aliff Fikri: Paws & Preferences</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicons -->
+    <link href="../assets/port-img/boby-logo.png" rel="icon" />
+    <link href="../assets/port-img/boby-logo.png" rel="apple-touch-icon" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="../assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="../assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="../assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/swiper/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+
+    <!-- Main CSS File -->
+    <link href="../assets/css/main.css" rel="stylesheet" />
+
+    <!-- =======================================================
+  * Template Name: EasyFolio
+  * Template URL: https://bootstrapmade.com/easyfolio-bootstrap-portfolio-template/
+  * Updated: Feb 21 2025 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  </head>
+
+  <style>
+    .btn-linkside {
+      background-color: var(--accent-color);
+      border-color: var(--accent-color);
+      color: var(--contrast-color);
+      padding: 0.8rem 2rem;
+      font-size: 1rem;
+      font-weight: 500;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+    }
+
+    .portfolio-details .portfolio-description p {
+      text-align: justify;
+    }
+
+    .tech-badge {
+      display: inline-flex;
+      align-items: center;
+      background: #f8f9fa;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 6px 10px;
+      margin: 5px;
+      font-size: 14px;
+    }
+
+    .tech-badge img {
+      height: 30px;
+      margin-right: 8px;
+    }
+
+    .project-details {
+      margin: 25px 0px 25px 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px; /* spacing between rows */
+      /* margin-left: 15px; */
+    }
+
+    .project-details .detail-row {
+      display: flex;
+      align-items: center;
+    }
+
+    .project-details i {
+      font-size: 1.5rem;
+      color: var(--accent-color);
+      margin-right: 8px;
+      flex-shrink: 0;
+      width: 30px;
+    }
+
+    .project-details h5 {
+      margin: 0;
+      font-size: 1rem;
+      font-weight: 600;
+      width: 130px; /* fixed width for labels */
+      flex-shrink: 0;
+    }
+
+    .project-details .detail-value {
+      flex: 1;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .project-details .detail-value a {
+      text-decoration: none;
+    }
+
+    .project-details .detail-value a:hover {
+      text-decoration: underline;
+    }
+
+    .project-details .btn {
+      font-size: 0.9rem;
+      padding: 4px 20px;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+    }
+
+    .project-details .btn.btn-primary {
+      background-color: var(--accent-color);
+      border-color: var(--accent-color);
+      color: var(--contrast-color);
+    }
+
+    .project-details .btn.btn-outline {
+      border: 2px solid color-mix(in srgb, var(--accent-color), transparent 70%);
+      color: var(--accent-color);
+      background: transparent;
+    }
+
+    .related-services {
+      background: var(--surface-color);
+      padding: 15px;
+      /* border-radius: 10px; */
+      /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.05); */
+    }
+    .related-services h4 {
+      font-weight: 600;
+    }
+
+    .job-scope-item {
+      background-color: var(--surface-color);
+      /* margin-bottom: 18x; */
+      padding-bottom: 18px;
+      transition: transform 0.3s ease;
+      /* border-bottom: 1px solid
+        color-mix(in srgb, var(--default-color), transparent 90%); */
+    }
+
+    .service-details .related-services .job-scope-item:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+    .job-scope-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .job-scope-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+
+    .job-scope-header i {
+      font-size: 1.6rem;
+      color: var(--accent-color);
+    }
+
+    .job-scope-header h5 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 0;
+      margin-left: 5px;
+      color: var(--heading-color);
+    }
+
+    .job-scope-item p {
+      margin: 0;
+      font-size: 14px;
+      color: color-mix(in srgb, var(--default-color), transparent 20%);
+      padding-left: 0px; /* indent explanation under title */
+      text-align: justify;
+    }
+
+    .job-scope-header s {
+      font-size: 14px;
+      color: var(--default-color);
+    }
+
+    section,
+    .section {
+      padding: 10px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      padding-bottom: 30px;
+      position: relative;
+    }
+  </style>
+
+  <body class="starter-page-page">
+    <header id="header" class="header d-flex align-items-center sticky-top">
+      <div
+        class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
+      >
+        <a
+          href="../index.html"
+          class="logo d-flex align-items-center me-auto me-xl-0"
+        >
+          <img src="../assets/port-img/boby-logo.png" alt="Logo" />
+          <h1 class="sitename" style="font-weight: 700">Aliff Fikri</h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li class="dropdown">
+              <a href="#" class="active"
+                ><span>Project</span>
+                <i class="bi bi-chevron-down toggle-dropdown"></i
+              ></a>
+              <ul>
+                <li>
+                  <a href="../projects.html">All Projects</a>
+                </li>
+                <li class="dropdown">
+                  <a href="#"
+                    ><span>Specific Projects</span>
+                    <i class="bi bi-chevron-down toggle-dropdown"></i
+                  ></a>
+                  <ul>
+                    <li>
+                      <a href="../project/pawsandprefs.html" class="active"
+                        >Paws & Preferences</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../project/internalsys.html"
+                        >MICTH Internal System</a
+                      >
+                    </li>
+                    <li><a href="../project/networked.html">NetWorked!</a></li>
+                    <li>
+                      <a href="../project/mpasandbloom.html">MPAS & BLOOM AI</a>
+                    </li>
+                    <li>
+                      <a href="../project/electricitycalc.html"
+                        >Electricity Rate Calculator</a
+                      >
+                    </li>
+                    <li><a href="../project/doclean.html">DoClean!</a></li>
+                    <li>
+                      <a href="../project/healthysnake.html"
+                        >Healthy Snake Game</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../project/ransomwhere.html">RansomWhere?</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="../experience.html">Experience</a></li>
+            <li><a href="../certificate.html">Achievement</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+        <div class="header-social-links">
+          <a href="https://github.com/alifffikri2404" class="github"
+            ><i class="bi bi-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/aliff-fikri-50a217232/"
+            class="linkedin"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- Project Details Section -->
+      <section
+        id="portfolio-details"
+        class="portfolio-details section"
+        style="padding: 40px 0px"
+      >
+        <div class="container section-title" data-aos="fade-up">
+          <br />
+          <h2>Paws & Preferences:<br />Find Your Favourite Kitty</h2>
+          <div class="title-shape">
+            <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <div class="container" data-aos="fade-up">
+          <div class="row gy-4 g-lg-5">
+            <!-- Photo and Video -->
+            <div class="col-lg-6">
+              <img
+                src="../assets/port-img/paws-1.png"
+                class="img-fluid mb-4"
+                alt="Paws Web UI"
+              />
+              <img
+                src="../assets/port-img/paws-2.png"
+                class="img-fluid mb-4"
+                alt="Paws Result UI"
+              />
+            </div>
+
+            <!-- Project Overview -->
+            <div class="col-lg-6">
+              <div class="position-sticky" style="top: 40px">
+                <div class="portfolio-description">
+                  <h2>Project Overview</h2>
+                  <p>
+                    Paws & Preferences is a playful Tinder-inspired web
+                    application that allows users to discover their feline
+                    preferences by swiping through an endless feed of random
+                    cats. Built with vanilla JavaScript, it replicates the core
+                    mechanics of modern dating apps including swipe gestures and
+                    instant feedback, to create an engaging and humorous
+                    experience. The web app connects to the CATAAS API to source
+                    its images and provides users with lighthearted personality
+                    insights based on their swiping patterns, and then
+                    showcasing clean front-end development and API integration.
+                  </p>
+                </div>
+                <div class="tech-badge">
+                  <img
+                    src="../assets/port-img/logo-javascript.png"
+                    alt="JavaScript logo"
+                  />
+                  <span>JavaScript</span>
+                </div>
+                <div class="tech-badge">
+                  <img src="../assets/port-img/logo-css3.png" alt="CSS3 logo" />
+                  <span>CSS</span>
+                </div>
+                <div class="tech-badge">
+                  <img
+                    src="../assets/port-img/logo-html5.png"
+                    alt="HTML5 logo"
+                  />
+                  <span>HTML</span>
+                </div>
+                <div class="tech-badge">
+                  <img
+                    src="../assets/port-img/logo-hammerjs.png"
+                    alt="Hammer.js Library logo"
+                  />
+                  <span>Hammer.js Library</span>
+                </div>
+                <div class="tech-badge">
+                  <img
+                    src="../assets/port-img/logo-cataas.jpg"
+                    alt="CATAAS API logo"
+                  />
+                  <span>CATAAS API</span>
+                </div>
+                <div class="tech-badge">
+                  <img
+                    src="../assets/port-img/logo-github.png"
+                    alt="GitHub Pages logo"
+                  />
+                  <span>GitHub Pages</span>
+                </div>
+                <div class="portfolio-info mt-4">
+                  <div class="project-details">
+                    <!-- Category -->
+                    <div class="detail-row">
+                      <i class="bi bi-file-code"></i>
+                      <h5>Category</h5>
+                      <div class="detail-value">Web & System Development</div>
+                    </div>
+                    <!-- Date -->
+                    <div class="detail-row">
+                      <i class="bi bi-clock"></i>
+                      <h5>Duration</h5>
+                      <div class="detail-value">August 2025</div>
+                    </div>
+                    <!-- Contributors -->
+                    <!-- <div class="detail-row">
+                      <i class="bi bi-people"></i>
+                      <h5>Contributors</h5>
+                      <div class="detail-value">
+                        <a
+                          href=""
+                          target="_blank"
+                          ></a
+                        >
+                      </div>
+                    </div> -->
+                    <!-- GitHub -->
+                    <div class="detail-row">
+                      <i class="bi bi-github"></i>
+                      <h5>GitHub</h5>
+                      <div class="detail-value">
+                        <a
+                          href="https://github.com/alifffikri2404/PawsPreferences.git"
+                          target="_blank"
+                          class="btn btn-outline btn-sm"
+                        >
+                          View Repo
+                        </a>
+                      </div>
+                    </div>
+                    <!-- Live Demo (if applicable) -->
+                    <div class="detail-row">
+                      <i class="bi bi-record-circle"></i>
+                      <h5>Live Demo</h5>
+                      <div class="detail-value">
+                        <a
+                          href="https://alifffikri2404.github.io/PawsPreferences/"
+                          target="_blank"
+                          class="btn btn-primary btn-sm"
+                        >
+                          Visit Site
+                        </a>
+                      </div>
+                    </div>
+                    <!-- Download APK (if applicable) -->
+                    <!-- <div class="detail-row">
+                      <i class="bi bi-android"></i>
+                      <h5>APK File</h5>
+                      <div class="detail-value">
+                        <a
+                          href=""
+                          target="_blank"
+                          class="btn btn-primary btn-sm"
+                        >
+                          Download APK
+                        </a>
+                      </div>
+                    </div> -->
+                  </div>
+
+                  <!-- Key Features -->
+                  <div class="related-services">
+                    <h4>Key Features</h4>
+                    <div class="job-scope-item">
+                      <div class="job-scope-header">
+                        <i class="bi bi-hand-index-thumb"></i>
+                        <h5>Intuitive Swipe Mechanics</h5>
+                      </div>
+                      <p>
+                        Implemented a familiar swipe-to-like (right) and
+                        swipe-to-dislike (left) interface that works seamlessly
+                        on both touch and desktop devices.
+                      </p>
+                    </div>
+                    <div class="job-scope-item">
+                      <div class="job-scope-header">
+                        <i class="bi bi-lightning-charge"></i>
+                        <h5>Dynamic Content & Feedback</h5>
+                      </div>
+                      <p>
+                        Fetches random cat images on-demand from an external API
+                        and generates humorous, which personalized results based
+                        on user choices.
+                      </p>
+                    </div>
+                    <div class="job-scope-item">
+                      <div class="job-scope-header">
+                        <i class="bi bi-phone"></i>
+                        <h5>Fully Responsive Design</h5>
+                      </div>
+                      <p>
+                        Ensured a smooth and consistent user experience across
+                        mobile and desktop browsers through responsive CSS and
+                        cross-platform gesture handling.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Challenges & Solutions -->
+                  <div class="related-services">
+                    <h4>Challenges & Solutions</h4>
+                    <div class="job-scope-item">
+                      <div class="job-scope-header">
+                        <i class="bi bi-exclamation-triangle"></i>
+                        <h5>Identified Challenges</h5>
+                      </div>
+                      <div class="job-scope-header">
+                        <s class="bi bi-caret-right-fill"></s>
+                        <p>
+                          Implementing reliable cross-platform swipe detection
+                          for both touchscreen and mouse input.
+                        </p>
+                      </div>
+                      <div class="job-scope-header">
+                        <s class="bi bi-caret-right-fill"></s>
+                        <p>
+                          Creating a smooth and realistic card swipe animation
+                          that mimics native app feeling.
+                        </p>
+                      </div>
+                      <div class="job-scope-header">
+                        <s class="bi bi-caret-right-fill"></s>
+                        <p>
+                          Managing application state and UI updates efficiently
+                          with vanilla JavaScript without a framework.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="job-scope-item">
+                      <div class="job-scope-header">
+                        <i class="bi bi-lightbulb"></i>
+                        <h5>Solutions & Action Plan</h5>
+                      </div>
+                      <div class="job-scope-header">
+                        <s class="bi bi-caret-right-fill"></s>
+                        <p>
+                          Integrated the Hammer.js library to abstract complex
+                          gesture logic, which providing a unified API to handle
+                          swipe events consistently across all devices.
+                        </p>
+                      </div>
+                      <div class="job-scope-header">
+                        <s class="bi bi-caret-right-fill"></s>
+                        <p>
+                          Implemented CSS transitions and transforms manipulated
+                          by JavaScript to animate the card's position and
+                          rotation in real-time based on drag velocity and
+                          direction.
+                        </p>
+                      </div>
+                      <div class="job-scope-header">
+                        <s class="bi bi-caret-right-fill"></s>
+                        <p>
+                          Structured the code into modular functions to handle
+                          distinct tasks including API calls, DOM updates, game
+                          logic, which ensuring maintainability and preventing
+                          spaghetti code.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /End Project Details Section -->
+
+      <!-- Achievement Section - if applicable -->
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="credits">
+          Developed by
+          <a href="https://www.linkedin.com/in/aliff-fikri-50a217232/"
+            >Aliff Fikri</a
+          ><br />
+          Designed by
+          <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+        <div class="social-links d-flex justify-content-center">
+          <a href="https://github.com/alifffikri2404"
+            ><i class="bi bi-github"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/aliff-fikri-50a217232/"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+        </div>
+
+        <div class="copyright text-center">
+          <p>
+            <br />
+            © <span>Copyright</span>
+            <strong class="px-1 sitename">EasyFolio</strong>
+            <span>All Rights Reserved</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/php-email-form/validate.js"></script>
+    <script src="../assets/vendor/aos/aos.js"></script>
+    <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

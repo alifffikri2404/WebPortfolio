@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Aliff Fikri: RansomWhere?</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicons -->
+    <link href="../assets/port-img/boby-logo.png" rel="icon" />
+    <link href="../assets/port-img/boby-logo.png" rel="apple-touch-icon" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="../assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="../assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="../assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/swiper/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+
+    <!-- Main CSS File -->
+    <link href="../assets/css/main.css" rel="stylesheet" />
+
+    <!-- =======================================================
+  * Template Name: EasyFolio
+  * Template URL: https://bootstrapmade.com/easyfolio-bootstrap-portfolio-template/
+  * Updated: Feb 21 2025 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  </head>
+
+  <style>
+    .btn-linkside {
+      background-color: var(--accent-color);
+      border-color: var(--accent-color);
+      color: var(--contrast-color);
+      padding: 0.8rem 2rem;
+      font-size: 1rem;
+      font-weight: 500;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+    }
+
+    .portfolio-details .portfolio-description p {
+      text-align: justify;
+    }
+
+    .tech-badge {
+      display: inline-flex;
+      align-items: center;
+      background: #f8f9fa;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 6px 10px;
+      margin: 5px;
+      font-size: 14px;
+    }
+
+    .tech-badge img {
+      height: 30px;
+      margin-right: 8px;
+    }
+
+    .project-details {
+      margin: 25px 0px 25px 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px; /* spacing between rows */
+      /* margin-left: 15px; */
+    }
+
+    .project-details .detail-row {
+      display: flex;
+      align-items: center;
+    }
+
+    .project-details i {
+      font-size: 1.5rem;
+      color: var(--accent-color);
+      margin-right: 8px;
+      flex-shrink: 0;
+      width: 30px;
+    }
+
+    .project-details h5 {
+      margin: 0;
+      font-size: 1rem;
+      font-weight: 600;
+      width: 130px; /* fixed width for labels */
+      flex-shrink: 0;
+    }
+
+    .project-details .detail-value {
+      flex: 1;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .project-details .detail-value a {
+      text-decoration: none;
+    }
+
+    .project-details .detail-value a:hover {
+      text-decoration: underline;
+    }
+
+    .project-details .btn {
+      font-size: 0.9rem;
+      padding: 4px 20px;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+    }
+
+    .project-details .btn.btn-primary {
+      background-color: var(--accent-color);
+      border-color: var(--accent-color);
+      color: var(--contrast-color);
+    }
+
+    .project-details .btn.btn-outline {
+      border: 2px solid color-mix(in srgb, var(--accent-color), transparent 70%);
+      color: var(--accent-color);
+      background: transparent;
+    }
+
+    .related-services {
+      background: var(--surface-color);
+      padding: 15px;
+      /* border-radius: 10px; */
+      /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.05); */
+    }
+    .related-services h4 {
+      font-weight: 600;
+    }
+
+    .job-scope-item {
+      background-color: var(--surface-color);
+      /* margin-bottom: 18x; */
+      padding-bottom: 18px;
+      transition: transform 0.3s ease;
+      /* border-bottom: 1px solid
+        color-mix(in srgb, var(--default-color), transparent 90%); */
+    }
+
+    .service-details .related-services .job-scope-item:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+    .job-scope-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .job-scope-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+
+    .job-scope-header i {
+      font-size: 1.6rem;
+      color: var(--accent-color);
+    }
+
+    .job-scope-header h5 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 0;
+      margin-left: 5px;
+      color: var(--heading-color);
+    }
+
+    .job-scope-item p {
+      margin: 0;
+      font-size: 14px;
+      color: color-mix(in srgb, var(--default-color), transparent 20%);
+      padding-left: 0px; /* indent explanation under title */
+      text-align: justify;
+    }
+
+    .job-scope-header s {
+      font-size: 14px;
+      color: var(--default-color);
+    }
+
+    section,
+    .section {
+      padding: 10px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      padding-bottom: 30px;
+      position: relative;
+    }
+  </style>
+
+  <body class="starter-page-page">
+    <header id="header" class="header d-flex align-items-center sticky-top">
+      <div
+        class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
+      >
+        <a
+          href="../index.html"
+          class="logo d-flex align-items-center me-auto me-xl-0"
+        >
+          <img src="../assets/port-img/boby-logo.png" alt="Logo" />
+          <h1 class="sitename" style="font-weight: 700">Aliff Fikri</h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li class="dropdown">
+              <a href="#" class="active"
+                ><span>Project</span>
+                <i class="bi bi-chevron-down toggle-dropdown"></i
+              ></a>
+              <ul>
+                <li>
+                  <a href="../projects.html">All Projects</a>
+                </li>
+                <li class="dropdown">
+                  <a href="#"
+                    ><span>Specific Projects</span>
+                    <i class="bi bi-chevron-down toggle-dropdown"></i
+                  ></a>
+                  <ul>
+                    <li>
+                      <a href="../project/pawsandprefs.html"
+                        >Paws & Preferences</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../project/internalsys.html"
+                        >MICTH Internal System</a
+                      >
+                    </li>
+                    <li><a href="../project/networked.html">NetWorked!</a></li>
+                    <li>
+                      <a href="../project/mpasandbloom.html">MPAS & BLOOM AI</a>
+                    </li>
+                    <li>
+                      <a href="../project/electricitycalc.html"
+                        >Electricity Rate Calculator</a
+                      >
+                    </li>
+                    <li><a href="../project/doclean.html">DoClean!</a></li>
+                    <li>
+                      <a href="../project/healthysnake.html"
+                        >Healthy Snake Game</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../project/ransomwhere.html" class="active"
+                        >RansomWhere?</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="../experience.html">Experience</a></li>
+            <li><a href="../certificate.html">Achievement</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+        <div class="header-social-links">
+          <a href="https://github.com/alifffikri2404" class="github"
+            ><i class="bi bi-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/aliff-fikri-50a217232/"
+            class="linkedin"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- Project Details Section -->
+      <section
+        id="portfolio-details"
+        class="portfolio-details section"
+        style="padding: 40px 0px"
+      >
+        <div class="container section-title" data-aos="fade-up">
+          <br />
+          <h2>RansomWhere?</h2>
+          <div class="title-shape">
+            <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <div class="container" data-aos="fade-up">
+          <div class="row gy-4 g-lg-5">
+            <!-- Photo and Video -->
+            <div class="col-lg-6">
+              <img
+                src="../assets/port-img/ransomwhere-logo.png"
+                class="img-fluid mb-4"
+                alt="RansomWhere? Logo"
+                style="width: 40rem"
+              />
+              <img
+                src="../assets/port-img/hiltiitc-1.png"
+                class="img-fluid mb-4"
+                alt="HILTI ITC Presentation"
+              />
+              <video
+                class="img-fluid mb-4"
+                controls
+                poster="../assets/port-img/hiltiitc-2.png"
+                alt="HILTI ITC Video Presentation"
+              >
+                <source
+                  src="../assets/port-vid/hiltiitc-videopresent.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <img
+                src="../assets/port-img/hiltiitc-3.png"
+                class="img-fluid mb-4"
+                alt="HILTI ITC UI 1"
+              />
+              <img
+                src="../assets/port-img/hiltiitc-4.png"
+                class="img-fluid mb-4"
+                alt="HILTI ITC UI 2"
+              />
+              <img
+                src="../assets/port-img/hiltiitc-7.png"
+                class="img-fluid mb-4"
+                alt="HILTI ITC UI 3"
+              />
+              <img
+                src="../assets/port-img/hiltiitc-5.png"
+                class="img-fluid mb-4"
+                alt="HILTI ITC UI 4"
+              />
+              <img
+                src="../assets/port-img/hiltiitc-8.png"
+                class="img-fluid mb-4"
+                alt="RansomWhere? Map"
+              />
+            </div>
+
+            <!-- Project Overview -->
+            <div class="col-lg-6">
+              <div class="position-sticky" style="top: 40px">
+                <div class="portfolio-description">
+                  <h2>Project Overview</h2>
+                  <p>
+                    RansomWhere? is a mobile party game designed to overcome the
+                    rising global threat of ransomware by transforming
+                    cybersecurity education into an engaging social experience.
+                    This game was developed for Hilti employees to raise
+                    awareness about ransomware attacks and also implemented
+                    prevention strategies through interactive gameplay, without
+                    requiring any prior IT knowledge. It addresses the critical
+                    need for proactive defense by leveraging the principle that
+                    people are 68% more productive when having fun according to
+                    the study, which making complex security concepts more
+                    accessible and memorable.
+                  </p>
+                  <p>
+                    The game also immerses players in a world where they must
+                    complete 3 missions, find and interact with objects while
+                    solve object-specific trivia to learn about the fundamentals
+                    and consequences of ransomware. This game provided a
+                    flexible and scalable solution for organizations since it
+                    came as single-player and offline mobile application, to
+                    educate their entire workforce and turned mandatory training
+                    into an enjoyable activity which can reduces human risk
+                    factors.
+                  </p>
+                </div>
+                <div class="tech-badge">
+                  <img
+                    src="../assets/port-img/logo-unity.png"
+                    alt="Unity Engine logo"
+                  />
+                  <span>Unity Engine</span>
+                </div>
+                <div class="tech-badge">
+                  <img src="../assets/port-img/logo-csharp.png" alt="C# logo" />
+                  <span>C#</span>
+                </div>
+                <div class="tech-badge">
+                  <img
+                    src="../assets/port-img/logo-justinmind.png"
+                    alt="Justinmind logo"
+                  />
+                  <span>Justinmind</span>
+                </div>
+                <div class="tech-badge">
+                  <img
+                    src="../assets/port-img/logo-sqlite.png"
+                    alt="SQLite logo"
+                  />
+                  <span>SQLite</span>
+                </div>
+                <div class="tech-badge">
+                  <img
+                    src="../assets/port-img/logo-photoshop.png"
+                    alt="Photoshop logo"
+                  />
+                  <span>Adobe Photoshop</span>
+                </div>
+                <div class="tech-badge">
+                  <img
+                    src="../assets/port-img/logo-mspaint.png"
+                    alt="MS Paint logo"
+                  />
+                  <span>MS Paint</span>
+                </div>
+                <div class="tech-badge">
+                  <img
+                    src="../assets/port-img/logo-android.png"
+                    alt="Android logo"
+                  />
+                  <span>Android</span>
+                </div>
+                <div class="portfolio-info mt-4">
+                  <div class="project-details">
+                    <!-- Category -->
+                    <div class="detail-row">
+                      <i class="bi bi-file-code"></i>
+                      <h5>Category</h5>
+                      <div class="detail-value">Mobile & Game Applications</div>
+                    </div>
+                    <!-- Date -->
+                    <div class="detail-row">
+                      <i class="bi bi-clock"></i>
+                      <h5>Duration</h5>
+                      <div class="detail-value">
+                        November 2021 – February 2022
+                      </div>
+                    </div>
+                    <!-- Contributors -->
+                    <div class="detail-row">
+                      <i class="bi bi-people"></i>
+                      <h5>Contributors</h5>
+                      <div class="detail-value">
+                        <a
+                          href="https://www.researchgate.net/profile/Novia-Admodisastro-2"
+                          target="_blank"
+                          >Prof. Madya Ts. Dr. Novia Indriaty Admodisastro</a
+                        ><br /><a
+                          href="https://www.linkedin.com/in/haziqrazif/"
+                          target="_blank"
+                          >Muhammad Haziq Mohammed Razif</a
+                        ><br /><a
+                          href="https://www.linkedin.com/in/arif-daniel-346084206/"
+                          target="_blank"
+                          >Muhammad Arif Daniel Yusoff</a
+                        ><br /><a
+                          href="https://www.linkedin.com/in/syafiq01/"
+                          target="_blank"
+                          >Muhamad Syafiq Adimun</a
+                        ><br /><a
+                          href="https://www.linkedin.com/in/izzuddin-hashim-523595232/"
+                          target="_blank"
+                          >Ahmad Izzuddin Mohd Hashim</a
+                        >
+                      </div>
+                    </div>
+                    <!-- GitHub -->
+                    <!-- <div class="detail-row">
+                      <i class="bi bi-github"></i>
+                      <h5>GitHub</h5>
+                      <div class="detail-value">
+                        <a
+                          href="https://github.com/hpcac/2023-APAC-HPC-AI.git"
+                          target="_blank"
+                          class="btn btn-outline btn-sm"
+                        >
+                          View Repo
+                        </a>
+                      </div>
+                    </div> -->
+                    <!-- Live Demo (if applicable) -->
+                    <!-- <div class="detail-row">
+                      <i class="bi bi-record-circle"></i>
+                      <h5>Live Demo</h5>
+                      <div class="detail-value">
+                        <a
+                          href="https://your-live-demo.com"
+                          target="_blank"
+                          class="btn btn-primary btn-sm"
+                        >
+                          Visit Site
+                        </a>
+                      </div>
+                    </div> -->
+                    <!-- Download APK (if applicable) -->
+                    <!-- <div class="detail-row">
+                      <i class="bi bi-android"></i>
+                      <h5>APK File</h5>
+                      <div class="detail-value">
+                        <a
+                          href=""
+                          target="_blank"
+                          class="btn btn-primary btn-sm"
+                        >
+                          Download APK
+                        </a>
+                      </div>
+                    </div> -->
+                  </div>
+
+                  <!-- Key Features -->
+                  <div class="related-services">
+                    <h4>Key Features</h4>
+                    <div class="job-scope-item">
+                      <div class="job-scope-header">
+                        <i class="bi bi-joystick"></i>
+                        <h5>Educational Party Gameplay</h5>
+                      </div>
+                      <p>
+                        Missions and trivia seamlessly integrate ransomware
+                        awareness into a fun and social party game format that
+                        suitable for all skill levels.
+                      </p>
+                    </div>
+                    <div class="job-scope-item">
+                      <div class="job-scope-header">
+                        <i class="bi bi-wifi-off"></i>
+                        <h5>Offline Accessibility</h5>
+                      </div>
+                      <p>
+                        Fully functional without an internet connection which
+                        allows employees to learn at anytime, anywhere, without
+                        security concerns.
+                      </p>
+                    </div>
+                    <div class="job-scope-item">
+                      <div class="job-scope-header">
+                        <i class="bi bi-person-circle"></i>
+                        <h5>Customizable Avatar System</h5>
+                      </div>
+                      <p>
+                        Player choice of male or female avatars increases
+                        relatability and engagement with the game's educational
+                        content.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Challenges & Solutions -->
+                  <div class="related-services">
+                    <h4>Challenges & Solutions</h4>
+                    <div class="job-scope-item">
+                      <div class="job-scope-header">
+                        <i class="bi bi-exclamation-triangle"></i>
+                        <h5>Identified Challenges</h5>
+                      </div>
+                      <div class="job-scope-header">
+                        <s class="bi bi-caret-right-fill"></s>
+                        <p>
+                          Making complex ransomware concepts understandable and
+                          engaging for non-technical employees.
+                        </p>
+                      </div>
+                      <div class="job-scope-header">
+                        <s class="bi bi-caret-right-fill"></s>
+                        <p>
+                          Designing for a wide range of players with varying
+                          tech proficiency within a single organization.
+                        </p>
+                      </div>
+                      <div class="job-scope-header">
+                        <s class="bi bi-caret-right-fill"></s>
+                        <p>
+                          Managing game data and player progress locally on a
+                          mobile device without online sync.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="job-scope-item">
+                      <div class="job-scope-header">
+                        <i class="bi bi-lightbulb"></i>
+                        <h5>Solutions & Action Plan</h5>
+                      </div>
+                      <div class="job-scope-header">
+                        <s class="bi bi-caret-right-fill"></s>
+                        <p>
+                          Implemented relatable scenarios, interactive object
+                          discovery and trivia pop-ups to break down information
+                          into digestible, fun gameplay chunks.
+                        </p>
+                      </div>
+                      <div class="job-scope-header">
+                        <s class="bi bi-caret-right-fill"></s>
+                        <p>
+                          Adopted a simple party game format with intuitive
+                          mechanics such as tap-to-interact and set clear
+                          missions, which eliminates complex controls and player
+                          elimination.
+                        </p>
+                      </div>
+                      <div class="job-scope-header">
+                        <s class="bi bi-caret-right-fill"></s>
+                        <p>
+                          Used a lightweight SQLite database to efficiently
+                          store player preferences, progress and game state
+                          reliably on the device.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /End Project Details Section -->
+
+      <!-- Achievement Section - if applicable -->
+      <section id="achievement" class="portfolio section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h3
+            style="
+              font-size: 26px;
+              font-weight: 700;
+              font-family: var(--heading-font);
+            "
+          >
+            Achievement
+          </h3>
+        </div>
+        <!-- End Section Title -->
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div
+            class="isotope-layout"
+            data-default-filter="*"
+            data-layout="masonry"
+            data-sort="original-order"
+          >
+            <div
+              class="row g-4 isotope-container"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div
+                class="col-lg-4 col-md-4 portfolio-item isotope-item filter-web"
+              >
+                <div class="portfolio-card">
+                  <div class="portfolio-image">
+                    <img
+                      src="../assets/port-cert/cert-hiltitc-semifinal.jpg"
+                      class="img-fluid"
+                      alt="HILTI ITC cert"
+                      loading="lazy"
+                    />
+                    <div class="portfolio-overlay">
+                      <div class="portfolio-actions">
+                        <a
+                          href="../assets/port-cert/cert-hiltitc-semifinal.jpg"
+                          class="glightbox preview-link"
+                          data-gallery="portfolio-gallery-cert1"
+                          ><i class="bi bi-eye"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="portfolio-content">
+                    <h3>Certificate of Achievement</h3>
+                    <p>Hilti IT Competition 2022</p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio 1 Item -->
+
+              <div
+                class="col-lg-4 col-md-4 portfolio-item isotope-item filter-web"
+              >
+                <div class="portfolio-card">
+                  <div class="portfolio-image">
+                    <img
+                      src="../assets/port-img/hiltiitc-8.jpg"
+                      class="img-fluid"
+                      alt="HILTI ITC post 1"
+                      loading="lazy"
+                    />
+                    <div class="portfolio-overlay">
+                      <div class="portfolio-actions">
+                        <a
+                          href="../assets/port-img/hiltiitc-8.jpg"
+                          class="glightbox preview-link"
+                          data-gallery="portfolio-gallery-cert2"
+                          ><i class="bi bi-eye"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="portfolio-content">
+                    <h3>Semi Finalist: Top 19 of 201</h3>
+                    <p>Hilti IT Competition 2022</p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio 2 Item -->
+
+              <div
+                class="col-lg-4 col-md-4 portfolio-item isotope-item filter-graphics"
+              >
+                <div class="portfolio-card">
+                  <div class="portfolio-image">
+                    <img
+                      src="../assets/port-img/hiltiitc-9.jpg"
+                      class="img-fluid"
+                      alt="HILTI ITC post 2"
+                      loading="lazy"
+                    />
+                    <div class="portfolio-overlay">
+                      <div class="portfolio-actions">
+                        <a
+                          href="../assets/port-img/hiltiitc-9.jpg"
+                          class="glightbox preview-link"
+                          data-gallery="portfolio-gallery-cert3"
+                          ><i class="bi bi-eye"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="portfolio-content">
+                    <h3>Akatsuki: Asia's Semi-Finalist</h3>
+                    <p>Hilti IT Competition 2022</p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio 3 Item -->
+            </div>
+
+            <!-- End Portfolio Container -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="credits">
+          Developed by
+          <a href="https://www.linkedin.com/in/aliff-fikri-50a217232/"
+            >Aliff Fikri</a
+          ><br />
+          Designed by
+          <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+        <div class="social-links d-flex justify-content-center">
+          <a href="https://github.com/alifffikri2404"
+            ><i class="bi bi-github"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/aliff-fikri-50a217232/"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+        </div>
+
+        <div class="copyright text-center">
+          <p>
+            <br />
+            © <span>Copyright</span>
+            <strong class="px-1 sitename">EasyFolio</strong>
+            <span>All Rights Reserved</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/php-email-form/validate.js"></script>
+    <script src="../assets/vendor/aos/aos.js"></script>
+    <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>
